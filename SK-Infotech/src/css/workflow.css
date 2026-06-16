@@ -1,0 +1,88 @@
+.workflow-container {
+  padding: 40px;
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  background: url("../assets/BG1.jpg") no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+}
+
+.workflow-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.workflow-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-family: sans-serif;
+  text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #00d4ff;
+  font-style: italic;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 20px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #00d4ff;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background: #00d4ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.content {
+  margin-left: 20px;
+  background: #ffffff10;
+  padding: 10px 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.content:hover {
+  background: #00d4ff30;
+  transform: scale(1.05);
+}
+
+.workflow-back {
+  margin-top: 0px;
+  margin-right: 0px;
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}

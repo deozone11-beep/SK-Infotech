@@ -1,0 +1,178 @@
+.emp-page {
+  padding: 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* 🔥 TOP BAR */
+.emp-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4b3dbd;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.emp-nav-right {
+  display: flex;
+  gap: 10px;
+}
+
+.emp-nav-right button {
+  background: white;
+  color: #4b3dbd;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.emp-nav-right button:hover {
+  background: #ddd;
+}
+
+.logout-btn {
+  background: red !important;
+  color: white !important;
+}
+
+/* 🔥 CARDS */
+.emp-cards {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.emp-card {
+  flex: 1;
+  min-height: 80px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+  border-radius: 12px;
+
+  color: white;
+  font-weight: bold;
+
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  transition: all 0.3s ease;
+}
+
+/* COLORS */
+.emp-card.pending {
+  background: rgba(243, 156, 18, 0.85);
+}
+
+.emp-card.progress {
+  background: rgba(47, 85, 212, 0.85);
+}
+
+.emp-card.completed {
+  background: rgba(39, 174, 96, 0.85);
+}
+
+/* 🔥 HOVER EFFECT */
+.emp-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  filter: brightness(1.1);
+}
+
+/* 🔥 GLOW EFFECT */
+.emp-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.3),
+    transparent
+  );
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.emp-card:hover::before {
+  opacity: 1;
+}
+
+/* 📊 TABLE */
+.emp-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.emp-table th,
+.emp-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* HEADER */
+.emp-table th {
+  background: linear-gradient(45deg, #4b3dbd, #6a5acd);
+  color: white;
+  font-weight: 600;
+}
+
+/* ROWS */
+.emp-table tr:nth-child(even) {
+  background: #f5f6ff;
+}
+
+.emp-table tr:hover {
+  background: #e3e6ff;
+}
+
+/* BUTTONS */
+.action-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.progress-btn,
+.complete-btn {
+  flex: 1;
+  padding: 6px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.progress-btn {
+  background: #2f55d4;
+}
+
+.complete-btn {
+  background: #27ae60;
+}
+
+.progress-btn:hover {
+  background: #1e3fb5;
+}
+
+.complete-btn:hover {
+  background: #1e874b;
+}
+
+tr td:first-child {
+  font-weight: bold;
+}

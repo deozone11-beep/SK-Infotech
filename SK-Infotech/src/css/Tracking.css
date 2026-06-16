@@ -1,0 +1,75 @@
+.tracking-page {
+  padding: 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 8px;
+  width: 250px;
+  margin-top: 10px;
+}
+
+.search-box button {
+  background: #4b3dbd;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+}
+
+.result-card {
+  background: rgb(236, 220, 220);
+  padding: 15px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.status.pending {
+  color: orange;
+}
+.status.inprogress {
+  color: blue;
+}
+.status.completed {
+  color: green;
+}
+
+.re-btn {
+  margin-top: 10px;
+  background: red;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-box {
+  position: relative;
+  width: 250px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.dropdown-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: #eee;
+}

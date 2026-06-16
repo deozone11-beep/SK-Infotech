@@ -1,0 +1,160 @@
+.doc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 5px;
+  padding: 10px;
+}
+
+.doc-tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.doc-tabs button{
+  margin-top: 0;
+}
+
+.check-main-container{
+  display: flex;
+  gap: 10px;
+  margin: 0px;
+  justify-content: end;
+}
+
+.doc-tabs button{
+  width: 150px;
+}
+
+.doc-topbar {
+  width: 150px;
+  margin-right: 0px;
+}
+
+.doc-topbar button {
+  margin: 0px;
+}
+
+.doc-table {
+  width: 1800px;
+  border-collapse: collapse;
+}
+
+.doc-table th,
+.doc-table td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.doc-table input {
+  width: 50px;
+}
+
+ .doc-table{
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+.doc-table th{
+    width: 10px;
+} */
+
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 13px; /* 🔥 slightly small */
+}
+
+.doc-table th,
+.doc-table td {
+  border: 1px solid #333;
+  padding: 4px 6px;   /* 🔥 reduce spacing */
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.2;   /* 🔥 reduce height */
+}
+
+/* 🔥 Polling Station column */
+.polling-col {
+  width: 280px;
+  max-width: 280px;
+  white-space: normal;
+  word-break: break-word;
+  text-align: left;
+}
+
+/* 🔥 Reduce row height */
+.doc-table tr {
+  height: 35px; /* adjust */
+}
+
+.doc-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* 🔥 small columns */
+.col-sl {
+  width: 40px;
+}
+
+.col-part {
+  width: 50px;
+}
+
+.col-zp {
+  width: 50px;
+}
+
+.col-small {
+  width: 70px;
+}
+
+/* 🔥 polling station bigger */
+.polling-col {
+  width: 250px;
+  text-align: left;
+  word-break: break-word;
+}
+
+.check-btn-back, .check-btn-home{
+    width: 100px;
+    margin: 0px;
+    margin-right: 5px;
+}
+
+.loader-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.loader {
+  border: 5px solid #eee;
+  border-top: 5px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.check-main-container{
+  margin-right: 17px;
+}
