@@ -1,0 +1,166 @@
+.emp-page {
+  padding: 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+.emp-cards {
+  display: flex;
+  gap: 15px;
+}
+
+.emp-card {
+  flex: 1;
+  min-height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+  border-radius: 12px;
+
+  color: white;
+  font-weight: bold;
+
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease; /* 🔥 smooth */
+}
+
+.emp-card.pending { background: orange; }
+.emp-card.progress { background: blue; }
+.emp-card.completed { background: green; }
+
+/* TABLE */
+.emp-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.emp-table th,
+.emp-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.emp-table th {
+  background: #4b3dbd;
+  color: white;
+}
+
+/* BUTTONS */
+.progress-btn {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.complete-btn {
+  background: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+}
+
+.action-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.progress-btn,
+.complete-btn {
+  flex: 1;
+  padding: 6px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.emp-card {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.emp-card:hover {
+  transform: translateY(-3px);
+}
+
+.emp-card.pending {
+  background: rgba(243, 156, 18, 0.7);
+}
+
+.emp-card.progress {
+  background: rgba(47, 85, 212, 0.7);
+}
+
+.emp-card.completed {
+  background: rgba(39, 174, 96, 0.7);
+}
+
+.emp-card:hover {
+  transform: translateY(-5px) scale(1.03); /* 🔥 lift */
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3); /* 🔥 glow */
+
+  backdrop-filter: blur(15px); /* 🔥 more glass */
+
+  filter: brightness(1.1); /* 🔥 shine */
+}
+
+.emp-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.3),
+    transparent
+  );
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.emp-card:hover::before {
+  opacity: 1;
+}
+
+.emp-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4b3dbd;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+.emp-nav-right {
+  display: flex;
+  gap: 10px;
+}
+
+.emp-nav-right button {
+  background: white;
+  color: #4b3dbd;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.emp-nav-right button:hover {
+  background: #ddd;
+}
+
+.logout-btn {
+  background: red !important;
+  color: white !important;
+}

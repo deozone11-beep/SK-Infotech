@@ -1,0 +1,111 @@
+.user-page {
+  padding: 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* FORM */
+.user-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.user-form input,
+.user-form select {
+  padding: 8px;
+}
+
+.user-form button {
+  background: #4b3dbd;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* TABLE */
+.user-table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.user-table th {
+  background: #4b3dbd;
+  color: white;
+}
+
+/* ACTION BUTTON CONTAINER */
+.action-btns {
+  display: flex;
+  gap: 10px;
+}
+
+/* UPDATE BUTTON */
+.edit {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* DEACTIVATE BUTTON */
+.delete {
+  background: linear-gradient(135deg, #ef4444, #f87171);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.password-cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.eye {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.user-nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px;
+    background: #4b3dbd;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.user-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}

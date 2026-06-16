@@ -1,0 +1,105 @@
+.dashboard-page {
+  padding: 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.dash-cards {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.dash-card {
+  flex: 1;
+  padding: 18px;
+  border-radius: 14px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dash-card span {
+  font-size: 20px;
+}
+
+/* HOVER EFFECT */
+.dash-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* COLORS */
+.dash-users { background: #3498db; }
+.dash-tasks { background: #9b59b6; }
+
+/* CHART */
+.chart-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+/* TABLE */
+.task-report {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.task-report table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-report th,
+.task-report td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.task-report th {
+  background: #4b3dbd;
+  color: white;
+}
+
+/* STATUS COLORS */
+.status.pending { color: orange; font-weight: bold; }
+.status.inprogress { color: blue; font-weight: bold; }
+.status.completed { color: green; font-weight: bold; }
+
+.dash-progress {
+  background: linear-gradient(45deg, blue, #4facfe);
+}
+.dash-completed {
+  background: linear-gradient(45deg, green, #2ecc71);
+}
+.dash-pending {
+  background: linear-gradient(45deg, orange, #ffb347);
+}
+.dash-back-btn {
+  background: #4b3dbd;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+.dash-back-btn:hover {
+  background: #372fa3;
+}

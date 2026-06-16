@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.lead-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🔵 TOP BAR */
+.topbar {
+  height: 60px;
+  background: #4b3dbd;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-section img {
+  height: 40px;
+}
+
+/* 🔷 CARDS GRID */
+.card-container {
+  flex: 1;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD STYLE */
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  color: #000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* COLORS */
+.green {
+  background: #c6f6d5;
+  border: 2px solid #38a169;
+}
+
+.blue {
+  background: #bee3f8;
+  border: 2px solid #3182ce;
+}
+
+.orange {
+  background: #fbd38d;
+  border: 2px solid #dd6b20;
+}
+
+.pink {
+  background: #fbb6ce;
+  border: 2px solid #d53f8c;
+}
+
+.yellow {
+  background: #faf089;
+  border: 2px solid #d69e2e;
+}
+
+/* FOOTER */
+.footer {
+  height: 40px;
+  background: #4b3dbd;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 140px;
+  cursor: pointer;
+
+  /* Smooth animation */
+  transition: all 0.35s ease;
+
+  /* Initial shadow */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔥 HOVER EFFECT */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+
+  /* Glow effect */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* ✨ Shine effect */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  left: 100%;
+}
+
+.team-lead-nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 30px;
+    background: #4b3dbd;
+    color: white;
+}
+
+.team-lead-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}

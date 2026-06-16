@@ -1,0 +1,116 @@
+.task-page {
+  padding: 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ADD BUTTON */
+.add-btn {
+  background: linear-gradient(135deg, #4b3dbd, #6d5dfc);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* FORM */
+.task-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.task-form input,
+.task-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* FORM BUTTONS */
+.form-actions {
+  grid-column: span 3;
+  display: flex;
+  gap: 10px;
+}
+
+.submit {
+  background: green;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+}
+
+.cancel {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+}
+
+/* TABLE */
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.task-table th,
+.task-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.task-table th {
+  background: #4b3dbd;
+  color: white;
+}
+
+.edit-btn {
+  background: linear-gradient(135deg, orange, gold);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* TOP BAR */
+.task-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4b3dbd;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+/* RIGHT SIDE */
+.nav-right button {
+  background: white;
+  color: #4b3dbd;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* HOVER */
+.nav-right button:hover {
+  background: #ddd;
+}
